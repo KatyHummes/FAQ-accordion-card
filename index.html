@@ -1,40 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ-ACCORDION-CARD-MAIN</title>
+  <link rel="stylesheet" href="style.css">
   
-  <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <img src="images/illustration-box-desktop.svg" alt="" class="box-desktop">
+  <div class="faq-card">
+    <div class="images">
+      <img src="images/illustration-woman-online-mobile.svg" alt="woman mobile" class="woman-mobile">
+      <img src="images/bg-pattern-mobile.svg" alt="shadow woman mobile" class="shadow-woman-mobile">
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+      <img src="images/illustration-woman-online-desktop.svg" alt="woman desktop" class="woman-desktop">
+      <img src="images/bg-pattern-desktop.svg" alt="shadow woman desktop" class="shadow-woman-desktop">
+      
+    </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="faq-info">
+      <h1>FAQ</h1>
+      <div class="accordions">
+        <div class="accordion">
+          <h2 class="title">
+            <span>How many team members can i invite?</span>
+            <img src="images/icon-arrow-down.svg" alt="arrow" class="arrow">
+          </h2>
+          <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <h2 class="title">
+            <span>What is the maximus file upload size?</span>
+            <img src="images/icon-arrow-down.svg" alt="arrow" class="arrow">
+          </h2>
+          <div class="accordion-content">
+            <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <h2 class="title">
+            <span>How do i reset my password?</span>
+            <img src="images/icon-arrow-down.svg" alt="arrow" class="arrow">
+          </h2>
+          <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <h2 class="title">
+            <span>Can i cancel my subscription?</span>
+            <img src="images/icon-arrow-down.svg" alt="arrow" class="arrow">
+          </h2>
+          <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <h2 class="title">
+            <span>Do you provide additional support?</span>
+            <img src="images/icon-arrow-down.svg" alt="arrow" class="arrow">
+          </h2>
+          <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <script src="script.js"></script>
 </body>
+
 </html>

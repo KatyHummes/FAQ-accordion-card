@@ -1,0 +1,198 @@
+@font-face {
+    font-family: kumbh;
+    src: url(fonts/kumbh.ttf) format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: kumbh;
+}
+
+:root {
+    /*Colors*/
+
+    /*text*/
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+
+    /*background gradient*/
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    /* neutral */
+
+    /* text */
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Dividers */
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+body {
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, var(--soft-violet), var(--soft-blue));
+}
+
+.faq-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 7rem 1rem 2.5rem 1rem;
+    margin: 7.5rem 1rem 5rem 1rem;
+    box-shadow: 0px 40px 20px rgba(45, 2, 80, 0.2);
+}
+
+.faq-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-card h1 {
+    color: var(--very-dark-desaturated-blue);
+}
+
+.images {
+    position: absolute;
+    margin: -5.7rem 2rem 0 2rem;
+    top: 0;
+}
+
+.woman-mobile {
+    position: relative;
+    z-index: 10;
+}
+
+.shadow-woman-mobile {
+    width: 100%;
+    margin-top: -5rem;
+}
+
+.accordions {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.accordion {
+    border-bottom: 1px solid var(--light-grayish-blue);
+    padding-bottom: 1rem;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+
+.arrow {
+    width: 10px;
+    height: 7px;
+}
+
+.accordion-content p {
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    padding-top: 0.4rem;
+}
+
+.accordion.active .accordion-content {
+    display: block;
+}
+
+.accordion.active h2 span {
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.accordion.active h2 img {
+    rotate: 180deg;
+}
+
+.accordion .accordion-content {
+    display: none;
+}
+.woman-desktop, .shadow-woman-desktop, .box-desktop{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .images {
+        position: relative;
+        margin: 0;
+        margin-left: -7rem;
+        margin-bottom: -7rem;
+    }
+
+    .woman-mobile,
+    .shadow-woman-mobile {
+        display: none;
+    }
+
+    .woman-desktop {
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+
+    .shadow-woman-desktop {
+        display: block;
+        width: 150%;
+        margin-top: -30rem;
+        margin-left: -15rem;
+    }
+
+    .box-desktop {
+        display: block;
+        position: absolute;
+        left: 0;
+        padding-left: 3.5rem;
+        padding-top: 5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+       
+    }
+
+    .faq-card {
+        margin: 5rem 10rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem;
+        gap: 3rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .faq-info {
+        align-items: start;
+    }
+
+    .accordion .title span:hover {
+        color: var(--soft-red);
+    }
+}
